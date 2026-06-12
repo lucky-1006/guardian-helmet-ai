@@ -54,44 +54,90 @@ guardian-helmet-ai/
 
 ---
 
-## ⚙️ Getting Started
+## ⚙️ How to Run Locally — Step-by-Step Guide
 
-### Prerequisites
+Follow these steps to configure, install, and launch the Guardian Helmet AI application on any system.
 
-- **Node.js**: v18.0.0 or higher recommended
-- **npm**: v9.0.0 or higher (distributed with Node.js)
+### 📋 Prerequisites
 
-### Installation
+Before starting, ensure you have the following installed on your machine:
+1. **Node.js** (v18.0.0 or higher recommended): [Download Node.js](https://nodejs.org/)
+2. **npm** (v9.0.0 or higher, usually comes bundled with Node.js): You can check your versions by running:
+   ```bash
+   node -v
+   npm -v
+   ```
+3. **Git**: [Download Git](https://git-scm.com/)
 
-Clone the repository and run the pre-configured root script to install dependencies for the root, frontend, and backend packages in a single step:
+---
 
+### 🛠️ Step 1: Clone the Repository
+
+Download the project code to your local machine:
 ```bash
-# Clone the repository
 git clone https://github.com/lucky-1006/guardian-helmet-ai.git
-
-# Navigate into the project folder
 cd guardian-helmet-ai
-
-# Install dependencies globally and inside subfolders
-npm run install:all
 ```
 
-### Running Locally
+---
 
-Launch both the Vite development client and the Express backend server concurrently using the root dev command:
+### 📦 Step 2: Install All Dependencies
 
+The project uses a root-level script to install dependencies for the root environment, the frontend, and the backend concurrently:
 ```bash
-# Start both frontend and backend concurrently
+npm run install:all
+```
+*(Alternative: You can manually navigate to the `frontend/` and `backend/` directories and run `npm install` inside each.)*
+
+---
+
+### 🔐 Step 3: Configure Environment Variables (Optional)
+
+The application uses environment files for configuration:
+
+#### A. Backend Configuration
+Create a `.env` file inside the `backend/` directory:
+```bash
+# Path: backend/.env
+PORT=3001
+```
+
+#### B. Frontend Configuration (For Map Visualization)
+The application uses Mapbox static maps for routes and heatmap displays. If you want the map backgrounds to render properly instead of showing as a fallback blank state, create a `.env` file inside the `frontend/` directory:
+```bash
+# Path: frontend/.env
+VITE_MAPBOX_ACCESS_TOKEN=your_mapbox_public_access_token
+```
+*(You can get a free token by creating a free account at [Mapbox](https://www.mapbox.com/)).*
+
+---
+
+### 🚀 Step 4: Run the Application Locally
+
+Start both the frontend client and the backend server concurrently in development mode using:
+```bash
 npm run dev
 ```
 
-* **Frontend Dashboard**: running at [http://localhost:3000](http://localhost:3000)
-* **Backend API Server**: running at [http://localhost:3001](http://localhost:3001)
+Your terminal will display logs for both the frontend compiler and backend server:
+* 🖥️ **Frontend Dashboard**: Open [http://localhost:3000](http://localhost:3000) in your web browser.
+* ⚙️ **Backend API Server**: Listening at [http://localhost:3001](http://localhost:3001).
 
-### Building for Production
+---
 
-Compile both applications into optimized production builds (`dist/` directories):
+### 🧪 Step 5: Test the Live Connection
 
+Once the dashboard loads at `http://localhost:3000`:
+1. Verify the link indicator in the top-left corner shows **System Online** (green).
+2. Click the **Terminal icon (Developer Tools)** in the top-right header to toggle the debug console drawer.
+3. Use the toggle buttons in the drawer to override sensors (such as helmet buckle state, alcohol level sliders, or simulating emergency crash incidents).
+4. Verify backend routes respond correctly by opening [http://localhost:3001/api/status](http://localhost:3001/api/status) in your browser.
+
+---
+
+### 📦 Step 6: Build for Production (Deploy ready)
+
+To build both modules into optimized production bundles (`dist/` directories):
 ```bash
 npm run build
 ```
