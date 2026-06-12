@@ -1,0 +1,31 @@
+{
+  "name": "guardian-helmet-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/server.js",
+  "description": "Express + TypeScript backend for the Guardian Helmet AI dashboard, processing safety status, rides logs, alerts, and emergency broadcast dispatching.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucky-1006/guardian-helmet-ai.git",
+    "directory": "backend"
+  },
+  "author": "Swastik Singh",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  }
+}

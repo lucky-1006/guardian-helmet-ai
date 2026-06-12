@@ -1,0 +1,26 @@
+{
+  "name": "guardian-helmet-ai",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Guardian Helmet AI Dashboard - A smart safety system for motorcyclists including real-time crash detection, alcohol interlock check, HUD dashboard, and SOS dispatcher.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucky-1006/guardian-helmet-ai.git"
+  },
+  "author": "Swastik Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucky-1006/guardian-helmet-ai/issues"
+  },
+  "homepage": "https://github.com/lucky-1006/guardian-helmet-ai#readme",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:backend": "npm run build --prefix backend",
+    "build": "npm run build:frontend && npm run build:backend",
+    "install:all": "npm install && npm install --prefix frontend && npm install --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

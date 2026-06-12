@@ -1,0 +1,8 @@
+{
+  "name": "Guardian Helmet AI",
+  "description": "A startup-grade smart helmet safety ecosystem featuring IoT sensor integration, real-time accident detection, and emergency response logic.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
