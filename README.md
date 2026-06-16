@@ -2,11 +2,13 @@
 
 Guardian Helmet AI is a smart, connected helmet ecosystem designed to protect motorcyclists by integrating real-time telemetry, active safety metrics, and automated emergency response mechanics. The project consists of a high-fidelity React dashboard interface (frontend) and an Express-powered server (backend) that processes data from simulated IoT sensors on the helmet.
 
-<img width="546" height="1076" alt="life home" src="https://github.com/user-attachments/assets/f4a1f797-37ef-4503-aa57-07679f38abb7" />
-<img width="548" height="1076" alt="life stats" src="https://github.com/user-attachments/assets/9d7d9380-7a27-45f3-85b1-f534f23d1ee9" />
-<img width="547" height="1079" alt="life map" src="https://github.com/user-attachments/assets/a3eb8f7d-0a74-4620-b9b7-3b6ad99a9026" />
-<img width="542" height="1071" alt="life system" src="https://github.com/user-attachments/assets/56ff4235-c815-44f4-a3ab-bb9651cf79e6" />
-<img width="547" height="1079" alt="life setting" src="https://github.com/user-attachments/assets/27a1260c-b3a7-4fb2-83bc-8fc355214bb0" />
+| Home | Stats | Map | System | Setting |
+|:---:|:---:|:---:|:---:|:---:|
+| <img width="546" height="1076" alt="life home" src="https://github.com/user-attachments/assets/f4a1f797-37ef-4503-aa57-07679f38abb7" /> |
+| <img width="548" height="1076" alt="life stats" src="https://github.com/user-attachments/assets/9d7d9380-7a27-45f3-85b1-f534f23d1ee9" /> |
+| <img width="547" height="1079" alt="life map" src="https://github.com/user-attachments/assets/a3eb8f7d-0a74-4620-b9b7-3b6ad99a9026" /> |
+| <img width="542" height="1071" alt="life system" src="https://github.com/user-attachments/assets/56ff4235-c815-44f4-a3ab-bb9651cf79e6" /> |
+| <img width="547" height="1079" alt="life setting" src="https://github.com/user-attachments/assets/27a1260c-b3a7-4fb2-83bc-8fc355214bb0" /> |
 
 
 ---
